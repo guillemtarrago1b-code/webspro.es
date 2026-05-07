@@ -373,6 +373,8 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .portfolio-item {
@@ -395,9 +397,15 @@
             justify-content: center;
         }
         
-        .portfolio-placeholder {
-            color: #8B92AB;
+        .portfolio-image a {
+            color: #0066FF;
+            text-decoration: none;
             font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .portfolio-image a:hover {
+            text-decoration: underline;
         }
         
         .portfolio-info {
@@ -414,36 +422,6 @@
         .portfolio-info p {
             color: #8B92AB;
             font-size: 14px;
-        }
-        
-        .sobre-mi-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 64px;
-            align-items: center;
-        }
-        
-        .sobre-mi-text p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #0A0E27;
-        }
-        
-        .foto-placeholder {
-            background: #E8EAED;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #8B92AB;
-            border-radius: 12px;
-        }
-        
-        .foto-nota {
-            font-size: 14px;
-            margin-top: 8px;
         }
         
         .contacto {
@@ -562,11 +540,6 @@
             border-bottom: 1px solid #1A1F3A;
         }
         
-        .footer-brand p {
-            color: #8B92AB;
-            margin-top: 8px;
-        }
-        
         .footer-links {
             display: flex;
             gap: 24px;
@@ -615,10 +588,6 @@
             
             .precio-card.destacado {
                 transform: scale(1);
-            }
-            
-            .sobre-mi-content {
-                grid-template-columns: 1fr;
             }
             
             .contacto-grid {
@@ -819,49 +788,20 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">Próximamente</div>
+                        <a href="https://arasfigueres.com" target="_blank">Ver web →</a>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Restaurante · Figueres</h4>
-                        <p>Web profesional con menú digital y reservas</p>
+                        <h4>Ara's Boutique · Figueres</h4>
+                        <p>Boutique de moda femenina con catálogo de marcas</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">Próximamente</div>
+                        <a href="https://fitness-padel.com" target="_blank">Ver web →</a>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Tienda de ropa · Roses</h4>
-                        <p>Catálogo online con galería de productos</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">Próximamente</div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Centro estético · Castelló</h4>
-                        <p>Web con servicios y formulario de citas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sobre-mi">
-        <div class="container">
-            <div class="sobre-mi-content">
-                <div class="sobre-mi-text">
-                    <h2>Sobre mí</h2>
-                    <p>Soy <strong>Guillem</strong>, de Peralada (Alt Empordà).</p>
-                    <p>Ayudo a negocios locales de Girona a tener presencia online profesional, sin complicaciones técnicas.</p>
-                    <p>Mi enfoque: <strong>precios justos, entregas rápidas, trato directo</strong>. Nada de agencias con intermediarios.</p>
-                    <p>Si tienes un negocio en la zona y necesitas una web que funcione, hablamos.</p>
-                </div>
-                <div>
-                    <div class="foto-placeholder">
-                        <p>Tu foto aquí</p>
-                        <p class="foto-nota">(Añadir después)</p>
+                        <h4>Fitness Pádel</h4>
+                        <p>Plataforma de entrenamientos personalizados de pádel</p>
                     </div>
                 </div>
             </div>
@@ -908,21 +848,14 @@
                         <span class="contacto-icon">📱</span>
                         <div>
                             <strong>WhatsApp / Teléfono</strong>
-                            <p><a href="tel:+34XXXXXXXXX">TU_TELEFONO_AQUI</a></p>
+                            <p><a href="tel:+34675616919">675 616 919</a></p>
                         </div>
                     </div>
                     <div class="contacto-item">
                         <span class="contacto-icon">📧</span>
                         <div>
                             <strong>Email</strong>
-                            <p><a href="mailto:info@webspro.es">info@webspro.es</a></p>
-                        </div>
-                    </div>
-                    <div class="contacto-item">
-                        <span class="contacto-icon">📍</span>
-                        <div>
-                            <strong>Ubicación</strong>
-                            <p>Girona, Cataluña</p>
+                            <p><a href="mailto:guillem@webspro.es">guillem@webspro.es</a></p>
                         </div>
                     </div>
                     <div class="contacto-nota">
@@ -936,9 +869,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
+                <div>
                     <div class="logo" style="color: white;">WebsPro<span class="logo-dot">.es</span></div>
-                    <p>Webs profesionales para negocios en Girona</p>
                 </div>
                 <div class="footer-links">
                     <a href="aviso-legal.html">Aviso Legal</a>
